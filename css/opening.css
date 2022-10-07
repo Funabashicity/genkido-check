@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Yusei+Magic&display=swap');
+
+
+
+body{
+  height:100vh;
+}
+
+#text{
+  padding:0 16px;
+  font-size:32px;
+  font-weight: bold;
+  color:rgb(33,97,100);
+  text-align: center;
+  position: absolute;
+  top:50%;                
+  transform: translateY(-50%);        
+}
+
+#text{
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+#text span{
+  display: inline-block;
+  opacity: 0;
+}
+
+#text.on span{
+  opacity:1;
+}
+
+
+.opening-wrap{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: 1s;
+  }
+  .opening{
+      width: 100%;
+      height: 100%;
+      background-color:#BBFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .opening-wrap .logo{
+      opacity: 0;
+      width: 80vw;
+      transition: 1.5s;
+      transform: scale(0.7) rotate(-30deg);
+  }
+  .opening-wrap.active .logo{
+      opacity: 1;
+      transform: scale(1.2) rotate(0deg);
+  }
+  .opening-wrap.active{
+      display: block !important;
+  }
+  .opening-wrap.end{
+      opacity: 0;
+      transform: scale(1.2);
+      display: none;
+  }
+
+

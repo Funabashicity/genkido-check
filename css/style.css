@@ -1,0 +1,199 @@
+body{
+  font-size: 24px;
+}
+
+.home_btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.next_btn{
+  display: inline-block;
+  text-align: center;
+  margin-top:60px;
+  border-radius: 8px;
+}
+
+.next_btn:hover{
+  cursor: pointer;
+  background-color:#084298;
+  color:#cfe2ff;
+  font-weight: bold;
+}
+
+.button-list{
+  text-align: center;
+}
+
+.containter{
+  text-align: center;
+}
+
+select{
+  cursor: pointer;
+}
+
+select:hover{
+  opacity: 0.5;
+}
+
+input,
+.next_btn{
+  width:60%;
+  background-color:#cfe2ff;
+  color:#084298;
+  border-radius: 8px;
+  padding:16px;
+  cursor: pointer;
+  font-size: 24px;
+  transition:all 0.5s 0s ease;
+}
+
+input:hover{
+  background-color:#084298;
+  color:#cfe2ff;
+  font-weight: bold;
+}
+
+select{
+  margin: auto;
+  width:80%;
+  font-size: 24px;
+  padding:16px;
+}
+
+button{
+  cursor: pointer;
+  display: block;
+  width:95%;
+  margin:16px auto 0; 
+  background-color:#cfe2ff;
+  color:#084298;
+  font-size: 20px;
+  padding:20px;
+  transition:all 0.5s 0s ease;
+}
+
+/* button:hover{
+  background-color:#084298;
+  color:#cfe2ff;
+  font-weight: bold;
+} */
+
+#button-list{
+  text-align: center;
+}
+
+.alert{
+  padding:1rem 1rem;
+  margin-bottom:1rem;
+  border:1px solid transparent;
+  border-radius:0.25rem;
+}
+
+.alert-primary{
+  color:#084298;
+  background-color: #cfe2ff;
+  border-color: #b6b6b6;
+}
+
+form{
+  text-align: center;
+  width:90%;
+  margin:20px auto 0;
+}
+
+.title_head{
+  text-align: center;
+  line-height: 1.5;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.description{
+  padding:16px;
+  margin-top:30px;
+  line-height: 1.5;
+}
+
+
+.resultText{
+  line-height: 1.5;
+}
+
+
+
+.smailtowa{
+  line-height: 1.5;
+  margin-top:20px;
+  padding:8px;
+}
+
+.start-btn{
+  border-radius: 50%;
+  width:110px;
+  height:110px;
+}
+
+.btn.btn-primary.click-hilight{
+  background-color:#00FFFF;
+}
+
+.result_display{
+  padding:16px;
+}
+
+.resultText{
+  padding:8px;
+  background:#a8f9ea9c;
+  border-radius:8px;
+}
+
+
+.header{
+  /* margin: 20% auto 0; */
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+body{
+  background-color:#EEFFFF;
+}
+
+.btn_content{
+  max-width:500px;
+  margin:20px auto 0;
+}
+
+.genkitext{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.opening-body{
+  
+}
+
+.des_head{
+    font-weight: bold;
+    text-align: center;
+}
+
+.des_block:nth-child(n){
+  margin-top:30px;
+}
+
+.des_block{
+  padding:8px 14px;
+  background:#a8f9ea9c;
+  border-radius:8px;
+}
+
+.para1{
+  margin-top:10px;
+}
+
+.desc-btn{
+  width:100%;
+  margin-top:30px;
+}
