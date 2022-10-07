@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元気度チェック結果ページ</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  
+</head>
+<body>
+  <div class="containar">
+      <h1 id="scoreResult" class="animated fadeInUp alert alert-primary">あなたの元気度は〇〇でした</h1>
+      <h2 id="riskResult" class="animated fadeInUp alert alert-primary">あなたの元気度は〇〇でした</h2>
+
+    <div class="result_display">
+      <div class="resultText" id="over104" style='display:none;'>
+        元気度が104スマイル以上のあなたは健康な状態が保たれております！！
+      </div>
+      <div class="resultText" id="85To103" style='display:none;'>
+      元気度が85スマイル〜103スマイルのあなたは健康状態が少し低下してきています。
+        日常生活を見直し、健康な状態を目指しましょう。
+      </div>
+      <div class="resultText" id="under84" style='display:none;'>
+      元気度がスマイル84以下のあなたは健康状態の低下がみられます。
+        積極的に運動を行ったり、食生活の改善を行いましょう。地域包括支援センターや在宅支援センターなどで日常生活の相談をすることもできます。
+      </div>
+    </div>
+
+      <div class="smailtowa">
+      ※元気度を示す単位として、「スマイル」を用いることになりました。これは、元気度が増えるほど笑顔も増えることを表しています。<br>質問の回答が全国平均と同じだった場合を100スマイルとしています。
+      </div>
+
+
+      
+    <div class="d-flex justify-content-center">
+    <form action="index.html">
+        <input type="submit" value="topへ戻る">
+      </form>
+    </div>
+  </div>
+
+
+  <script src="./js/calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元気度チェック</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>  
+<body>
+  <div class="container">
+    <div id="js-question" class="alert alert-primary" role="alert">問題文</div>
+
+    <select style="display:none;" id="height">
+    <option value="null">身長を選択してください</option>
+    <option value="1.35">135cm</option>
+    <option value="1.36">136cm</option>
+    <option value="1.37">137cm</option>
+    <option value="1.38">138cm</option>
+    <option value="1.39">139cm</option>
+    <option value="1.40">140cm</option>
+    <option value="1.41">141cm</option>
+    <option value="1.42">142cm</option>
+    <option value="1.43">143cm</option>
+    <option value="1.44">144cm</option>
+    <option value="1.45">145cm</option>
+    <option value="1.46">146cm</option>
+    <option value="1.47">147cm</option>
+    <option value="1.48">148cm</option>
+    <option value="1.49">149cm</option>
+    <option value="1.50">150cm</option>
+    <option value="1.51">151cm</option>
+    <option value="1.52">152cm</option>
+    <option value="1.53">153cm</option>
+    <option value="1.54">154cm</option>
+    <option value="1.55">155cm</option>
+    <option value="1.56">156cm</option>
+    <option value="1.57">157cm</option>
+    <option value="1.58">158cm</option>
+    <option value="1.59">159cm</option>
+    <option value="1.60">160cm</option>
+    <option value="1.61">161cm</option>
+    <option value="1.62">162cm</option>
+    <option value="1.63">163cm</option>
+    <option value="1.64">164cm</option>
+    <option value="1.65">165cm</option>
+    <option value="1.66">166cm</option>
+    <option value="1.67">167cm</option>
+    <option value="1.68">168cm</option>
+    <option value="1.69">169cm</option>
+    <option value="1.70">170cm</option>
+    <option value="1.71">171cm</option>
+    <option value="1.72">172cm</option>
+    <option value="1.73">173cm</option>
+    <option value="1.74">174cm</option>
+    <option value="1.75">175cm</option>
+    <option value="1.76">176cm</option>
+    <option value="1.77">177cm</option>
+    <option value="1.78">178cm</option>
+    <option value="1.79">179cm</option>
+    <option value="1.80">180cm</option>
+    <option value="1.81">181cm</option>
+    <option value="1.82">182cm</option>
+    <option value="1.83">183cm</option>
+    <option value="1.84">184cm</option>
+    <option value="1.85">185cm</option>
+    <option value="1.86">186cm</option>
+    <option value="1.87">187cm</option>
+    <option value="1.88">188cm</option>
+    <option value="1.89">189cm</option>
+    <option value="1.90">190cm</option>
+    <option value="1.91">191cm</option>
+    <option value="1.92">192cm</option>
+    <option value="1.93">193cm</option>
+    <option value="1.94">194cm</option>
+    <option value="1.95">195cm</option>
+    <option value="1.96">196cm</option>
+    <option value="1.97">197cm</option>
+    <option value="1.98">198cm</option>
+    <option value="1.99">199cm</option>
+    <option value="2.0">200cm</option>
+    <option value="2.01">201cm</option>
+    <option value="2.02">202cm</option>
+    <option value="2.03">203cm</option>
+    <option value="2.04">204cm</option>
+    <option value="2.05">205cm</option>
+    <option value="2.06">206cm</option>
+    <option value="2.07">207cm</option>
+    <option value="2.08">208cm</option>
+    <option value="2.09">209cm</option>
+    <option value="2.10">210cm</option>
+  </select>
+
+  <select style="display:none; margin-top:20px;" id="weight">
+    <option value="null">体重を選択してください</option>
+    <option value="30">30kg</option>
+    <option value="31">31kg</option>
+    <option value="32">32kg</option>
+    <option value="33">33kg</option>
+    <option value="34">34kg</option>
+    <option value="35">35kg</option>
+    <option value="36">36kg</option>
+    <option value="37">37kg</option>
+    <option value="38">38kg</option>
+    <option value="39">39kg</option>
+    <option value="40">40kg</option>
+    <option value="41">41kg</option>
+    <option value="42">42kg</option>
+    <option value="43">43kg</option>
+    <option value="44">44kg</option>
+    <option value="45">45kg</option>
+    <option value="46">46kg</option>
+    <option value="47">47kg</option>
+    <option value="48">48kg</option>
+    <option value="49">49kg</option>
+    <option value="50">50kg</option>
+    <option value="51">51kg</option>
+    <option value="52">52kg</option>
+    <option value="53">53kg</option>
+    <option value="54">54kg</option>
+    <option value="55">55kg</option>
+    <option value="56">56kg</option>
+    <option value="57">57kg</option>
+    <option value="58">58kg</option>
+    <option value="59">59kg</option>
+    <option value="60">60kg</option>
+    <option value="61">61kg</option>
+    <option value="62">62kg</option>
+    <option value="63">63kg</option>
+    <option value="64">64kg</option>
+    <option value="65">65kg</option>
+    <option value="66">66kg</option>
+    <option value="67">67kg</option>
+    <option value="68">68kg</option>
+    <option value="69">69kg</option>
+    <option value="70">70kg</option>
+    <option value="71">71kg</option>
+    <option value="72">72kg</option>
+    <option value="73">73kg</option>
+    <option value="74">74kg</option>
+    <option value="75">75kg</option>
+    <option value="76">76kg</option>
+    <option value="77">77kg</option>
+    <option value="78">78kg</option>
+    <option value="79">79kg</option>
+    <option value="80">80kg</option>
+    <option value="81">81kg</option>
+    <option value="82">82kg</option>
+    <option value="83">83kg</option>
+    <option value="84">84kg</option>
+    <option value="85">85kg</option>
+    <option value="86">86kg</option>
+    <option value="87">87kg</option>
+    <option value="88">88kg</option>
+    <option value="89">89kg</option>
+    <option value="90">90kg</option>
+    <option value="91">91kg</option>
+    <option value="92">92kg</option>
+    <option value="93">93kg</option>
+    <option value="94">94kg</option>
+    <option value="95">95kg</option>
+    <option value="96">96kg</option>
+    <option value="97">97kg</option>
+    <option value="98">98kg</option>
+    <option value="99">99kg</option>
+    <option value="100">100kg</option>
+    <option value="102">102kg</option>
+    <option value="103">103kg</option>
+    <option value="104">104kg</option>
+    <option value="105">105kg</option>
+    <option value="106">106kg</option>
+    <option value="107">107kg</option>
+    <option value="108">108kg</option>
+    <option value="109">109kg</option>
+    <option value="110">110kg</option>
+    <option value="111">111kg</option>
+    <option value="112">112kg</option>
+    <option value="113">113kg</option>
+    <option value="114">114kg</option>
+    <option value="115">115kg</option>
+    <option value="116">116kg</option>
+    <option value="117">117kg</option>
+    <option value="118">118kg</option>
+    <option value="119">119kg</option>
+    <option value="120">120kg</option>
+  </select>
+
+
+    <select  style="display:none" id="age">
+      <option value="null">選択してください</option>        
+      <option value="0">65歳</option>
+      <option value="1">66歳</option>
+      <option value="2">67歳</option>
+      <option value="3">68歳</option>
+      <option value="4">69歳</option>
+      <option value="5">70歳</option>
+      <option value="6">71歳</option>
+      <option value="7">72歳</option>
+      <option value="8">73歳</option>
+      <option value="9">74歳</option>
+      <option value="10">75歳</option>
+      <option value="11">76歳</option>
+      <option value="12">77歳</option>
+      <option value="13">78歳</option>
+      <option value="14">79歳</option>
+      <option value="15">80歳</option>
+      <option value="16">81歳</option>
+      <option value="17">82歳</option>
+      <option value="18">83歳</option>
+      <option value="19">84歳</option>
+      <option value="20">85歳</option>
+      <option value="21">86歳</option>
+      <option value="22">87歳</option>
+      <option value="23">88歳</option>
+      <option value="24">89歳</option>
+      <option value="25">90歳以上</option>
+    </select>
+
+    <div id="button-list">
+      <button  type="button" class="btn btn-primary"></button>
+      <button  type="button" class=" btn btn-primary"></button>
+    </div>
+    
+    <!-- Formボタンだと、値未入力の時の警告文がでる前に画面遷移する -->
+    <!-- 画面遷移まえに分岐処理をするために -->
+    <!-- ダミーでフォームを作成 -->
+    <div id="dummy-form" style="display:none; margin-top:30px; text-align:center;">
+        <input id="dummy-btn" type="submit" value="元気度を測定！">
+    </div>      
+
+  <!-- ダミーフォームで条件をクリアした場合こっちのフォームから画面遷移する -->
+    <form style="display:none;"  action="result.html">
+      <input id="result_btn" type="submit" value="元気度を測定！">
+    </form> 
+   
+    
+  </div>
+
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
