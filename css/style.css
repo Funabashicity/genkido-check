@@ -200,6 +200,6 @@ body{
 
 @media screen and (max-width:480px){
   .div_desc{
-    font-size:80%;
+    font-size:20px;
   }
 }
