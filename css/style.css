@@ -203,3 +203,8 @@ body{
     font-size:20px;
   }
 }
+
+.result_font{
+ font-weight: bold;
+ color:#ff6347;
+}
