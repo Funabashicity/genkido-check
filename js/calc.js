@@ -120,7 +120,7 @@ const genkidoCalc = () =>{
 genkido = genkidoCalc()
 
 //元気度を画面に表示
-document.getElementById('scoreResult').textContent = 'あなたの元気度は'+ genkido + 'スマイルです';
+document.getElementById('scoreResult').textContent = genkido;
 
 
 
@@ -162,4 +162,4 @@ resultText(genkido);
 yourRisk = riskCalc();
 
 //リスク評価尺度を画面に表示
-document.getElementById('riskResult').textContent = '3年後の要支援・要介護リスク尺度は'+ yourRisk + '％です';
+document.getElementById('riskResult').textContent = yourRisk;
